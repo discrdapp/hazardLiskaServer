@@ -1,19 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "mongodb": "^6.8.0",
-    "ws": "^8.17.1"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server"
-  },
-  "name": "hazardliskaserver",
-  "version": "1.0.0",
-  "main": "server.js",
-=======
   "name": "hazardliskaserver",
   "version": "1.0.0",
   "main": "server.js",
@@ -22,21 +7,14 @@
     "start": "node server",
     "dev": "nodemon server"
   },
->>>>>>> bab9801 (update)
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-<<<<<<< HEAD
-  "devDependencies": {
-    "nodemon": "^3.1.4"
-=======
   "dependencies": {
-    "axios": "^1.7.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "ws": "^8.17.1"
->>>>>>> bab9801 (update)
   }
 }
