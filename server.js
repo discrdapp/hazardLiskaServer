@@ -4,29 +4,17 @@ const { WebSocketServer } = require('ws');
 
 const app = express();
 const PORT = 5000;
-<<<<<<< HEAD
-const SPIN_INTERVAL = 60000; // 60 seconds
-=======
 const SPIN_INTERVAL = 60000;
->>>>>>> bab9801 (update)
 
 app.use(cors());
 
 const server = app.listen(PORT, () => {
-<<<<<<< HEAD
-  console.log(`Server is running on http://localhost:${PORT}`);
-=======
   console.log(`Server is running on ${PORT}`);
->>>>>>> bab9801 (update)
 });
 
 const wss = new WebSocketServer({ server });
 
-<<<<<<< HEAD
-let currentNumber = Math.floor(Math.random() * 36);
-=======
 let currentNumber = Math.floor(Math.random() * 36) + 1;
->>>>>>> bab9801 (update)
 let timeToSpin = SPIN_INTERVAL;
 
 const broadcast = (data) => {
@@ -53,12 +41,6 @@ setInterval(() => {
     broadcast({ timeRemaining: timeToSpin });
   } else {
     timeToSpin = SPIN_INTERVAL;
-<<<<<<< HEAD
-    currentNumber = Math.floor(Math.random() * 36);
-    broadcast({ number: currentNumber, timeRemaining: timeToSpin });
-  }
-}, 1000);
-=======
     currentNumber = Math.floor(Math.random() * 36) + 1;
     broadcast({ number: currentNumber, timeRemaining: timeToSpin });
   }
@@ -67,5 +49,4 @@ setInterval(() => {
 // Health check endpoint for UptimeRobot
 app.get('/health', (req, res) => {
     res.status(200).send('OK');
-  });
->>>>>>> bab9801 (update)
+});
