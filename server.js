@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const { WebSocketServer } = require('ws')
+const { WebSocketServer, WebSocket} = require('ws')
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
